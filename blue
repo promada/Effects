@@ -1,0 +1,11 @@
+local args = {
+    [1] = {
+        [1] = getrenv()._G.Pass,
+        [2] = "KnifeColor",
+        [3] = "ChangeColor",
+        [5] = 0,
+        [6] = "BlueMode"
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.CharaMoves:InvokeServer(unpack(args))
